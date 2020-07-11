@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mkdir -p ~/.config/i3/firefox/;
+mkdir -p ~/.config/compton/;
+mkdir -p ~/.config/dunst/;
+mkdir -p ~/.config/polybar/;
+
+ln -s "$(pwd)"/compton/config ~/.config/compton/config;
+ln -s "$(pwd)"/i3/lock_on_sleep.sh ~/.config/i3/lock_on_sleep.sh;
+ln -s "$(pwd)"/i3/ui-update.sh ~/.config/i3/ui-update.sh;
+ln -s "$(pwd)"/i3/config ~/.config/i3/config;
+ln -s "$(pwd)"/i3/firefox/firefoxChrome.sh ~/.config/i3/firefox/firefoxChrome.sh;
+ln -s "$(pwd)"/i3/firefox/firefoxTheme.css ~/.config/i3/firefox/firefoxTheme.css;
+ln -s "$(pwd)"/dunst/dunstrc ~/.config/dunst/dunstrc;
+ln -s "$(pwd)"/dunst/dunst.sh ~/.config/dunst/dunst.sh;
+ln -s "$(pwd)"/polybar/config ~/.config/polybar/config;
+ln -s "$(pwd)"/polybar/polybar.sh ~/.config/polybar/polybar.sh;
