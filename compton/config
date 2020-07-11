@@ -3,7 +3,6 @@ backend = "glx";
 vsync = "opengl-swc";
 
 glx-swap-method = 2;
-xrender-sync = true;
 xrender-sync-fence = true;
 
 # transparancy settings for i3
@@ -39,5 +38,4 @@ mark-ovredir-focused = true;
 # blur NOT WORKING
 blur-background = true;
 blur-background-frame = true;
-alpha-step = 0.06;
 blur-background-fixed = true;
