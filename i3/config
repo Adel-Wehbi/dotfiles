@@ -194,6 +194,9 @@ gaps outer 10
 
 ## Commands
 
+# configure second monitor
+exec --no-startup-id xhdmi
+
 # pywal
 exec_always --no-startup-id ~/.config/i3/ui-update.sh &
 
@@ -205,3 +208,4 @@ exec --no-startup-id xss-lock -- ~/.config/i3/lock_on_sleep.sh &
 
 # clipster the keyboard manager
 exec --no-startup-id clipster -d
+
