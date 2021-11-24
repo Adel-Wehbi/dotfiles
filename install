@@ -15,3 +15,5 @@ ln -s "$(pwd)"/dunst/dunstrc ~/.config/dunst/dunstrc;
 ln -s "$(pwd)"/dunst/dunst.sh ~/.config/dunst/dunst.sh;
 ln -s "$(pwd)"/polybar/config ~/.config/polybar/config;
 ln -s "$(pwd)"/polybar/polybar.sh ~/.config/polybar/polybar.sh;
+ln -s "$(pwd)"/.Xresources ~/.Xresources
+
