@@ -125,7 +125,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # lock screen
-bindsym Control+Mod1+l exec --no-startup-id i3lock -t -i "$(cat ~/.cache/wal/wal)" --ignore-empty-password
+bindsym Control+Mod1+l exec --no-startup-id light-locker-command -l
 
 # clipster (the clipboard manager) selection window
 bindsym $mod+Shift+p exec --no-startup-id clipster -sc
@@ -204,8 +204,13 @@ exec_always --no-startup-id ~/.config/i3/ui-update.sh &
 exec_always --no-startup-id compton --config ~/.config/compton/config -b
 
 # to have lockscreen on suspend
-exec --no-startup-id xss-lock -- ~/.config/i3/lock_on_sleep.sh &
+# exec --no-startup-id xss-lock -- ~/.config/i3/lock_on_sleep.sh &
 
 # clipster the keyboard manager
 exec --no-startup-id clipster -d
 
+# keyboard layout
+exec --no-startup-id setxkbmap us,ca,ru -option 'grp:alt_shift_toggle'
+
+# xdg startup applications
+exec --no-startup-id dex -a
